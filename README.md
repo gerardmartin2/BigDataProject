@@ -7,6 +7,6 @@ The project consists in predicting whether an aircraft is going to need unexpect
 - CSV files: Files that contain measures from different sensors in an aircraft, measured every five minutes of a flight.
 
 The project is divided in three secuential pipelines:
-- management.py : Pipeline that generates a matrix by grouping KPIs and the average of the subsystem sensor 3453. 
+- ```sh management.py``` : Pipeline that generates a matrix by grouping KPIs and the average of the subsystem sensor 3453. 
 - analysis.py : Pipeline that creates, trains, validates and stores a decision tree model.
 - runtime.py: Pipeline that, given an input (date,aircraft), replicates the management pipeline and uses the model created in the analysis pipeline topredict wheter the plane is going to need an unscheduled maintenance or not.
